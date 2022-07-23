@@ -1,0 +1,32 @@
+import java.util.*;
+class Solution
+{
+    void main()
+    {
+        Scanner sc= new Scanner(System.in);
+        int no;
+        no=sc.nextInt();
+        isPalindrome(no);
+        
+    }
+    public boolean isPalindrome(int x) 
+    {
+        int ne=0;
+        int i;
+        int j=1;
+    int f;
+        f=x;
+    while(x>0)
+    {
+        
+        i=x%10;
+        ne=(ne*10)+i;
+        x=x/10;
+    }
+    if(f==ne)
+        return true;
+        else
+            return false;
+        
+    }
+}
