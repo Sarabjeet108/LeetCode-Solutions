@@ -1,0 +1,28 @@
+import java.util.*;
+class Solution 
+{
+    void main()
+    {
+        int numb;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter a number");
+        numb=sc.nextInt();
+        isThree(numb);
+    }
+    public boolean isThree(int n)
+    {
+        int f=0;
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                f++;
+            }
+        }
+        if(f==3)
+            return true;
+            else 
+                return false;
+        
+    }
+}
